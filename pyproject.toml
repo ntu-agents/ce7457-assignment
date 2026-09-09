@@ -1,0 +1,20 @@
+[project]
+name = "assignment"
+version = "0.1.0"
+description = "CE7457 Reinforcement Learning assignment: dynamic programming, tabular RL, and deep RL"
+requires-python = ">=3.10"
+dependencies = [
+    "gymnasium[toy-text,box2d]>=1.3.0",
+    "numpy>=2.2.6",
+    "torch>=2.2",
+    "matplotlib>=3.9",
+    "tqdm>=4.70.0",
+    "pytest>=8.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["submission"]
